@@ -1,0 +1,4 @@
+/* pages/department/department.wxss */
+.my-grid-item {
+  background-color: rgb(247, 247, 247) !important;
+}

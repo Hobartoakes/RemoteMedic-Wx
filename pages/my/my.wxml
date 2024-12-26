@@ -1,0 +1,18 @@
+<!--pages/my/my.wxml-->
+<view class="userinfo">
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">微信登录</button>
+  <text wx:else class="userinfo-nickname">{{userInfo.nickName}}</text>
+  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+</view>
+
+<van-grid clickable column-num="1">
+  <van-grid-item custom-class="myGrid" icon="comment" link-type="navigateTo" url="/pages/my/textConsult/textConsult" text="图文问诊" />
+  <van-grid-item custom-class="myGrid" icon="chat" link-type="navigateTo" url="/pages/my/phoneConsult/phoneConsult" text="电话问诊" />
+  <van-grid-item custom-class="myGrid" icon="manager" link-type="navigateTo" url="/pages/my/healthFile/healthFile" text="健康档案" />
+</van-grid>
+
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item wx:for="{{ list }}" wx:key="index" icon="{{ item.icon }}">
+    {{item.text}}
+  </van-tabbar-item>
+</van-tabbar>

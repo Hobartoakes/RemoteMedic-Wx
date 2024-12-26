@@ -1,0 +1,22 @@
+<van-search model:value="{{ keyword }}" placeholder="疾病、医院、科室、医生名" bind:search="onSearch"/>
+<van-card
+  desc="{{item.province}}　{{item.hospital}}"
+  title="{{ item.realName }}"
+  thumb="{{ item.head }}"
+  wx:key="index"
+  wx:for="{{ doctors }}"
+  id="{{ item.id }}"
+  bindtap="jump"
+  centered="true"
+>
+  <view slot="price-top">
+    <text class="introduction">{{ item.message }}</text>
+  </view>
+  <view slot="price">
+    评分:<text style="color:orange;"> {{item.goodcommonts}}</text>
+    <van-icon name="star" color="orange" size="12px" />　总回答: {{item.services}}
+  </view>
+  <view slot="bottom">
+    图文:￥{{ item.morderPrice }}　　电话:￥{{ item.porderPrice }}
+  </view>
+</van-card>
