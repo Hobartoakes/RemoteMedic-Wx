@@ -7,20 +7,26 @@
     justify-content: center;
     align-items: center;
     padding: 16px;
-    background-color: var(--background-color);
+    background-color: #F5F5F5; /* 替换背景色变量 */
     height: 100%;
 }
 
 /* 信息显示 */
 .confirm-container text {
     font-size: 18px;
-    color: var(--text-color);
+    color: #333333; /* 替换文字颜色变量 */
     margin: 8px 0;
 }
 
 /* 确认按钮 */
 .confirm-button {
-    @extend .weui-btn_primary; /* 使用 WeUI 的主按钮样式 */
+    display: block;
+    padding: 10px 16px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #007aff;
+    border-radius: 5px;
     width: 80%;
     margin-top: 20px;
 }
