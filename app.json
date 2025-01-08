@@ -6,6 +6,7 @@
     "pages/my/my",
     "pages/doctorList/doctorList",
     "pages/doctor/doctor",
+    "pages/call/call",
     "pages/textConsult/textConsult",
     "pages/my/healthFile/healthFile",
     "pages/phoneConsult/phoneConsult",
