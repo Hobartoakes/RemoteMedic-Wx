@@ -1,0 +1,9 @@
+<view class="confirm-container">
+    <!-- 显示通话总结信息 -->
+    <text>通话已结束</text>
+    <text>总时长: {{duration}} 秒</text> <!-- 显示通话总时长 -->
+    <text>费用: ¥{{cost}}</text> <!-- 显示通话总费用 -->
+
+    <!-- 确认按钮 -->
+    <button class="confirm-button" bindtap="confirm">确认</button>
+</view>

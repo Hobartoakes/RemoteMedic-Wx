@@ -1,0 +1,26 @@
+@import '/miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss';
+
+/* 容器样式 */
+.confirm-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--background-color);
+    height: 100%;
+}
+
+/* 信息显示 */
+.confirm-container text {
+    font-size: 18px;
+    color: var(--text-color);
+    margin: 8px 0;
+}
+
+/* 确认按钮 */
+.confirm-button {
+    @extend .weui-btn_primary; /* 使用 WeUI 的主按钮样式 */
+    width: 80%;
+    margin-top: 20px;
+}
