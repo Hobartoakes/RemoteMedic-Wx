@@ -1,0 +1,17 @@
+<view class="call-container">
+    <!-- 视频显示区域 -->
+    <view class="video-container">
+        <view class="local-video">本地视频</view> <!-- 本地用户的视频窗口 -->
+        <view class="remote-video">远程视频</view> <!-- 远程用户的视频窗口 -->
+    </view>
+
+    <!-- 信息显示区域 -->
+    <view class="info">
+        <text>正在与 {{doctorName}} 通话中...</text> <!-- 显示医生姓名 -->
+        <text>时长: {{duration}} 秒</text> <!-- 显示实时通话时长 -->
+        <text>费用: ¥{{cost}}</text> <!-- 显示实时通话费用 -->
+    </view>
+
+    <!-- 挂断按钮 -->
+    <button class="end-call-button" bindtap="endCall">挂断</button>
+</view>
